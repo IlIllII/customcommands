@@ -9,6 +9,11 @@
 	"categories": [
 		"Other"
 	],
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/IlIllII/customcommands"
+    },
+	"license": "MIT",
 	"activationEvents": [
 		"onCommand:customcommands.goToTop",
 		"onCommand:customcommands.selectToTop",
