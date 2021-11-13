@@ -1,0 +1,110 @@
+{
+	"name": "customcommands",
+	"displayName": "CustomCommands",
+	"description": "Adds new editor commands.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:customcommands.goToTop",
+		"onCommand:customcommands.selectToTop",
+		"onCommand:customcommands.goToBottom",
+		"onCommand:customcommands.selectToBottom",
+		"onCommand:customcommands.goToMiddle",
+		"onCommand:customcommands.selectToMiddle",
+		"onCommand:customcommands.goToPrevBlankLine",
+		"onCommand:customcommands.selectToPrevBlankLine",
+		"onCommand:customcommands.goToNextBlankLine",
+		"onCommand:customcommands.selectToNextBlankLine",
+		"onCommand:customcommands.centerOnCursor",
+		"onCommand:customcommands.deleteBetweenParentheses",
+		"onCommand:customcommands.indentBlock",
+		"onCommand:customcommands.outdentBlock"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "customcommands.goToTop",
+				"title": "goToTop"
+			},
+			{
+				"command": "customcommands.selectToTop",
+				"title": "selectToTop"
+			},
+			{
+				"command": "customcommands.goToBottom",
+				"title": "goToBottom"
+			},
+			{
+				"command": "customcommands.selectToBottom",
+				"title": "selectToBottom"
+			},
+			{
+				"command": "customcommands.goToMiddle",
+				"title": "goToMiddle"
+			},
+			{
+				"command": "customcommands.selectToMiddle",
+				"title": "selectToMiddle"
+			},
+			{
+				"command": "customcommands.goToPrevBlankLine",
+				"title": "goToPrevBlankLine"
+			},
+			{
+				"command": "customcommands.selectToPrevBlankLine",
+				"title": "selectToPrevBlankLine"
+			},
+			{
+				"command": "customcommands.goToNextBlankLine",
+				"title": "goToNextBlankLine"
+			},
+			{
+				"command": "customcommands.selectToNextBlankLine",
+				"title": "selectToNextBlankLine"
+			},
+			{
+				"command": "customcommands.centerOnCursor",
+				"title": "centerOnCursor"
+			},
+			{
+				"command": "customcommands.deleteBetweenParentheses",
+				"title": "deleteBetweenParentheses"
+			},
+			{
+				"command": "customcommands.indentBlock",
+				"title": "indentBlock"
+			},
+			{
+				"command": "customcommands.outdentBlock",
+				"title": "outdentBlock"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.62.0",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4",
+		"@vscode/test-electron": "^1.6.2"
+	}
+}
